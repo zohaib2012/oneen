@@ -6,10 +6,10 @@ import cors from "cors";
 const app = express(); 
 app.use(express.json());
  databaseconnection()
- app.use(cors({
-  origin: ["http://localhost:5173", "https://certiicationssfrontend.vercel.app"],
-  Credential:true
- }))
+app.use(cors({
+  origin: ["https://certiicationssfrontend.vercel.app", "http://localhost:5173"],
+  credentials: true
+}));
 app.use('/api/user',userroutes)
 app.use('/api/certificate',certificateroutes)
 const PORT = process.env.PORT || 5000;  

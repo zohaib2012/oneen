@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(cors({
   origin: ["http://localhost:5173", "https://certiicationssfrontend.vercel.app/"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials:true
 }));
 app.use('/api/user',userroutes)
 app.use('/api/certificate',certificateroutes)

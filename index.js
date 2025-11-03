@@ -7,8 +7,8 @@ const app = express();
 app.use(express.json());
  databaseconnection()
 app.use(cors({
-  origin: ["https://certiicationssfrontend.vercel.app", "http://localhost:5173"],
-  credentials: true
+  origin: ["http://localhost:5173", "https://certiicationssfrontend.vercel.app/"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 }));
 app.use('/api/user',userroutes)
 app.use('/api/certificate',certificateroutes)

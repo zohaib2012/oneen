@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
  databaseconnection()
 app.use(cors({
-  origin: ["http://localhost:5173", "https://certiicationssfrontend.vercel.app",'https://www.alriyadh-gov-sa.online','https://alriyadh-gov-sa.online'],
+  origin: ["http://localhost:5173", "https://certiicationssfrontend.vercel.app",'https://eservices.alriyadh-gov-sa.online','https://www.eservices.alriyadh-gov-sa.online'],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials:true
 }));

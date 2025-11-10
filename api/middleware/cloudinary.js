@@ -3,10 +3,16 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+// cloudinary.config({
+// 	cloud_name: "dlrinxri6",
+// 	api_key: "238474534336935",
+// 	api_secret: "Ny2YF34-KOL1KrPBKxBAvR4hs7U",
+// });
+
 cloudinary.config({
-	cloud_name: "dlrinxri6",
-	api_key: "238474534336935",
-	api_secret: "Ny2YF34-KOL1KrPBKxBAvR4hs7U",
+	cloud_name: "dyiihhkgz",
+	api_key: "264889929517893",
+	api_secret: "Sa8A2JMfDTCa0n_ZXvq8EaT7pMA",
 });
 
 export default cloudinary

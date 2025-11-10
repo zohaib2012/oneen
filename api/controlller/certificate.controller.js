@@ -142,6 +142,7 @@ export const updateCertificate = async (req, res) => {
     if (!certificate) {
       return res.status(404).json({ message: "Certificate not found" });
     }
+  
     res.status(200).json(certificate);
   } catch (error) {
     res.status(400).json({ message: error.message });

@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
  databaseconnection()
 app.use(cors({
-  origin: ["http://localhost:5173", 'https://www.alriyadh-gov-sa.online','https://alriyadh-gov-sa.online','https://certiicationssfrontend-k32l.vercel.app', 'https://certiicationssfrontend-ffrz9k5nx-zohaibs-projects-8573595d.vercel.app', "https://certiicationssfrontend.vercel.app",'https://eservices.alriyadh-gov-sa.online','https://www.eservices.alriyadh-gov-sa.online'],
+  origin: ["http://localhost:5173",'https://eservices.alriyadh-gov-sa.site','https://www.eservices.alriyadh-gov-sa.site/', 'https://www.alriyadh-gov-sa.online','https://alriyadh-gov-sa.online','https://certiicationssfrontend-k32l.vercel.app', 'https://certiicationssfrontend-ffrz9k5nx-zohaibs-projects-8573595d.vercel.app', "https://certiicationssfrontend.vercel.app",'https://eservices.alriyadh-gov-sa.online','https://www.eservices.alriyadh-gov-sa.online'],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials:true
 }));
